@@ -1,0 +1,7 @@
+<%= form_tag("/charge", method: "post") do %>
+  <%= label_tag(:customer_id, "Chargebee Customer Id:") %>
+  <%= text_field_tag(:customer_id) %>
+
+  <%= text_field_tag 'Date', "Select Date", class: 'flatpickr' %>
+  <%= submit_tag("Submit") %>
+<% end %>
